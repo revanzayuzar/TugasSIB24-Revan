@@ -18,6 +18,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 999;
     background-color: rgb(200, 200, 200);
     padding: 10px 25px;
     box-shadow: 0 0 10px rgb(25, 25, 25);
@@ -59,6 +60,7 @@ header span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
     transform: translateX(-25px);
     opacity: 0;
 }
@@ -91,12 +93,62 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    padding-bottom: 10px;
+    background-color: rgb(200, 200, 200);
+    padding: 10px 0;
 }
 
 footer p {
-    color: rgb(100, 100, 100);
-    font-size: 15px;
-    font-weight: 400;
+    color: rgb(88, 88, 88);
+    font-size: 12px;
+    font-weight: 500;
     text-align: center;
+}
+
+/* Slider */
+.slider-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-out;
+    width: 300%;
+}
+
+.slide {
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.slide img {
+    width: 33.33333%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    padding-top: 7px;
+    border: none;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.prev-btn {
+    left: 5%;
+}
+
+.next-btn {
+    right: 5%;
 }
