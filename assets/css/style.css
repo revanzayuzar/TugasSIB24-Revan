@@ -87,9 +87,9 @@ header span {
     right: 0;
     bottom: 0;
     z-index: 999;
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(200, 200, 200);
     padding: 15px;
-    border-left: 3px solid rgb(160, 160, 160);
+    border-left: 3px solid rgb(180, 180, 180);
     overflow-y: auto;
     transform: translateX(100%);
     transition: all 0.15s ease-out;
@@ -100,17 +100,17 @@ header span {
     transition: all 0.15s ease-out;
 }
 
-.navbar i {
+.navbar i#close {
     color: black;
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(222, 222, 222);
     font-size: 22px;
     padding: 5px;
-    border: 1.5px solid rgb(160, 160, 160);
+    border: 1.5px solid rgb(150, 150, 150);
     border-radius: 5px;
 }
 
-.navbar i:hover {
-    border: 1.5px solid black;
+.navbar i#close:hover {
+    border-color: rgb(75, 75, 75);
     transition: all 0.25s ease-out;
 }
 
@@ -121,7 +121,7 @@ header span {
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid rgb(160, 160, 160);
+    border-bottom: 1px solid rgb(180, 180, 180);
 }
 
 .navbar a {
@@ -135,7 +135,12 @@ header span {
 
 .navbar a:hover {
     color: rgb(75, 75, 75);
-    transform: scale(1.05);
+    transform: translateX(10px);
+    transition: all 0.2s ease-out;
+}
+
+.navbar a i {
+    margin-right: 10px;
 }
 
 .bg-dark {
@@ -199,7 +204,7 @@ footer p {
 }
 
 .slider-container .info h1 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -318,13 +323,13 @@ header .right {
 }
 
 .javascript-dasar h1 {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
     text-align: center;
 }
 
 .javascript-dasar h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     margin-top: 25px;
 }
