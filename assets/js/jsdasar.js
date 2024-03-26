@@ -2,7 +2,7 @@
 alert("JavaScript Dasar");
 
 // Judul Konten
-document.writeln("<h1><center>JavaScript Dasar</center></h1>");
+document.writeln("<h1>JavaScript Dasar</h1>");
 document.writeln("<hr>");
 
 // JavaScript Variabel

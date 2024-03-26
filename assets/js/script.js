@@ -5,6 +5,27 @@ setTimeout(function() {
     content.classList.add("content-active");
 }, 1000);
 
+// Open Menu / Menampilkan Menu
+let openMenu = document.getElementById("menu");
+let navbar = document.querySelector(".navbar");
+
+openMenu.addEventListener("click", function() {
+    navbar.classList.add("navbar-active");
+});
+
+// Close Menu / Menyembunyikan Menu
+let closeMenu = document.getElementById("close");
+
+closeMenu.addEventListener("click", function() {
+    navbar.classList.remove("navbar-active");
+});
+
+document.addEventListener("click", function(event) {
+    if (!navbar.contains(event.target) && !closeMenu.contains(event.target) && !openMenu.contains(event.target)) {
+        navbar.classList.remove("navbar-active");
+    }
+});
+
 // Slider
 const slider = document.querySelector('.slider');
 const slides = document.querySelectorAll('.slide');

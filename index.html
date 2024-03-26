@@ -6,14 +6,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Landing Dom</title>
+    <title>Home</title>
 </head>
 
 <body>
+    <!-- Header -->
     <header>
-        <h1>TugasSIB24-Revan</h1>
-        <span></span>
+        <div class="logo">
+            <span></span>
+            <h1><a href="#">TugasSIB24-Revan</a></h1>
+        </div>
+        <i class="fa-solid fa-bars" id="menu" title="Menu"></i>
     </header>
+
+    <!-- Navbar / Menu -->
+    <nav class="navbar">
+        <i class="fa-solid fa-chevron-right" id="close" title="Close"></i>
+        <h1>Daftar Menu</h1>
+        <a href="index.html">Home</a>
+        <a href="index/index.html">Homepage First</a>
+        <a href="assets/html/form.html">HTML Form</a>
+        <a href="assets/html/jsdasar.html">JavaScript Dasar</a>
+        <a href="assets/html/landingdom.html">Landing Dom</a>
+        <a href="#">Coming Soon</a>
+        <a href="#">Coming Soon</a>
+        <a href="https://revanzayuzar.github.io">Visit My Website</a>
+    </nav>
 
     <!-- Slider -->
     <div class="slider-container">
@@ -24,19 +42,22 @@
             <div class="slide"><img src="assets/img/image-03.jpg" alt="Gambar 3"></div>
         </div>
         <button class="nav-btn next-btn" onclick="nextSlide()">&#10095;</button>
+
+        <!-- Welcome & Info -->
+        <div class="info">
+            <h1>Selamat Datang</h1>
+            <p>Daftar menu/tugas terletak di bagian pojok kanan atas!</p>
+        </div>
     </div>
 
-    <!-- Content -->
-    <div class="content">
-        <a href="assets/html/jsdasar.html">JAVASCRIPT DASAR</a>
-        <a href="assets/html/form.html">FORM</a>
-    </div>
-
+    <!-- Footer -->
     <footer>
         <p>Created by M. Revanza Yuzar</p>
     </footer>
 
+    <!-- Script JavaScript -->
     <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/d67c175362.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>JavaScript Dasar</title>
+    <title>Landing Dom</title>
 </head>
 
 <body>
@@ -33,10 +33,22 @@
         <a href="https://revanzayuzar.github.io">Visit My Website</a>
     </nav>
 
-    <!-- JavaScript Dasar -->
-    <main class="javascript-dasar">
-        <script src="../js/jsdasar.js"></script>
-    </main>
+    <!-- Slider -->
+    <div class="slider-container">
+        <button class="nav-btn prev-btn" onclick="prevSlide()">&#10094;</button>
+        <div class="slider">
+            <div class="slide"><img src="../img/image-01.jpg" alt="Gambar 1"></div>
+            <div class="slide"><img src="../img/image-02.jpg" alt="Gambar 2"></div>
+            <div class="slide"><img src="../img/image-03.jpg" alt="Gambar 3"></div>
+        </div>
+        <button class="nav-btn next-btn" onclick="nextSlide()">&#10095;</button>
+
+        <!-- Welcome & Info -->
+        <div class="info">
+            <h1>Selamat Datang</h1>
+            <p>Daftar menu/tugas terletak di bagian pojok kanan atas!</p>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
