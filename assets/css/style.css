@@ -139,8 +139,18 @@ header span {
     transition: all 0.2s ease-out;
 }
 
+.navbar a#logout {
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
 .navbar a i {
     margin-right: 10px;
+}
+
+.navbar a#logout i {
+    margin-right: 0;
+    margin-left: 10px;
 }
 
 .bg-dark {
