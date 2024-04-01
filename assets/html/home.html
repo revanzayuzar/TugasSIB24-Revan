@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/icon/icon.jpg">
     <link rel="stylesheet" href="../css/style.css">
-    <title>JavaScript Dasar</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -50,9 +50,23 @@
     <!-- Background Dark -->
     <div class="bg-dark"></div>
 
-    <!-- JavaScript Dasar -->
-    <div class="javascript-dasar">
-        <script src="../js/jsdasar.js"></script>
+    <!-- Slider -->
+    <div class="slider-container">
+        <button class="nav-btn prev-btn" onclick="prevSlide()">&#10094;</button>
+        <div class="slider">
+            <div class="slide"><img src="../img/background/image-01.jpg" alt="Gambar 1"></div>
+            <div class="slide"><img src="../img/background/image-02.jpg" alt="Gambar 2"></div>
+            <div class="slide"><img src="../img/background/image-03.jpg" alt="Gambar 3"></div>
+            <div class="slide"><img src="../img/background/image-04.jpg" alt="Gambar 4"></div>
+            <div class="slide"><img src="../img/background/image-05.jpg" alt="Gambar 5"></div>
+        </div>
+        <button class="nav-btn next-btn" onclick="nextSlide()">&#10095;</button>
+
+        <!-- Welcome & Info -->
+        <div class="info">
+            <h1>Selamat Datang</h1>
+            <p>Daftar menu/tugas terletak di bagian pojok kanan atas!</p>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -63,6 +77,7 @@
 
     <!-- Script JavaScript -->
     <script src="../js/script.js"></script>
+    <script src="../js/slider.js"></script>
     <script src="https://kit.fontawesome.com/d67c175362.js" crossorigin="anonymous"></script>
 </body>
 

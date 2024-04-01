@@ -5,15 +5,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/icon/icon.jpg">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Home</title>
+    <title>Login Responsive</title>
 </head>
 
 <body>
     <!-- Header -->
     <header>
         <div class="logo">
-            <span></span>
+            <img src="assets/img/profile/user.jpg" alt="User" title="User">
             <h1><a href="#">TugasSIB24-Revan</a></h1>
         </div>
         <i class="fa-solid fa-bars" id="menu" title="Menu"></i>
@@ -21,47 +22,76 @@
 
     <!-- Navbar / Menu -->
     <nav class="navbar">
-        <i class="fa-solid fa-chevron-right" id="close" title="Close"></i>
-        <h1>Daftar Menu</h1>
-        <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
-        <a href="index/index.html"><i class="fa-solid fa-circle-chevron-right"></i>Homepage First</a>
-        <a href="assets/html/form.html"><i class="fa-solid fa-circle-chevron-right"></i>HTML Form</a>
-        <a href="assets/html/jsdasar.html"><i class="fa-solid fa-circle-chevron-right"></i>JavaScript Dasar</a>
-        <a href="assets/html/landingdom.html"><i class="fa-solid fa-circle-chevron-right"></i>Landing Dom</a>
-        <a href="assets/html/productapi.html"><i class="fa-solid fa-circle-chevron-right"></i>Product API</a>
-        <a href="assets/html/product-responsive.html"><i class="fa-solid fa-circle-chevron-right"></i>Product Responsive</a>
-        <a href="assets/html/login-responsive.html"><i class="fa-solid fa-right-to-bracket"></i>Login Responsive</a>
-        <a href="https://revanzayuzar.github.io"><i class="fa-solid fa-circle-user"></i>Visit My Website</a>
-        <a href="assets/html/login-responsive.html" id="logout">Logout<i class="fa-solid fa-right-from-bracket"></i></a>
+        <div class="navbar-header">
+            <div class="navbar-profile">
+                <img src="assets/img/profile/user.jpg" alt="User" title="User">
+                <h1>User</h1>
+            </div>
+            <i class="fa-solid fa-chevron-right" id="close" title="Close"></i>
+        </div>
+        <div class="navbar-content">
+            <h2>Daftar Menu</h2>
+            <a href="index.html"><i class="fa-solid fa-right-to-bracket"></i>Login Responsive</a>
+            <!-- <a href="assets/html/home.html"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="assets/html/homepage-first.html"><i class="fa-solid fa-circle-chevron-right"></i>Homepage First</a>
+            <a href="assets/html/form.html"><i class="fa-solid fa-circle-chevron-right"></i>HTML Form</a>
+            <a href="assets/html/jsdasar.html"><i class="fa-solid fa-circle-chevron-right"></i>JavaScript Dasar</a>
+            <a href="assets/html/landingdom.html"><i class="fa-solid fa-circle-chevron-right"></i>Landing Dom</a>
+            <a href="assets/html/productapi.html"><i class="fa-solid fa-circle-chevron-right"></i>Product API</a>
+            <a href="assets/html/product-responsive.html"><i class="fa-solid fa-circle-chevron-right"></i>Product Responsive</a>
+            <a href="index.html"><i class="fa-solid fa-right-to-bracket"></i>Login Responsive</a>
+            <a href="https://revanzayuzar.github.io"><i class="fa-solid fa-circle-user"></i>Visit My Website</a>
+            <a href="index.html" id="logout">Logout<i class="fa-solid fa-right-from-bracket"></i></a> -->
+        </div>
+        <div class="navbar-footer">
+            <p>User</p>
+        </div>
     </nav>
 
     <!-- Background Dark -->
     <div class="bg-dark"></div>
 
-    <!-- Slider -->
-    <div class="slider-container">
-        <button class="nav-btn prev-btn" onclick="prevSlide()">&#10094;</button>
-        <div class="slider">
-            <div class="slide"><img src="assets/img/image-01.jpg" alt="Gambar 1"></div>
-            <div class="slide"><img src="assets/img/image-02.jpg" alt="Gambar 2"></div>
-            <div class="slide"><img src="assets/img/image-03.jpg" alt="Gambar 3"></div>
-        </div>
-        <button class="nav-btn next-btn" onclick="nextSlide()">&#10095;</button>
+    <!-- Login -->
+    <div class="login-container">
+        <div class="login-center">
+            <h1>Login User</h1>
 
-        <!-- Welcome & Info -->
-        <div class="info">
-            <h1>Selamat Datang</h1>
-            <p>Daftar menu/tugas terletak di bagian pojok kanan atas!</p>
+            <form class="login" id="login">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Masukkan Username" required
+                oninvalid="this.setCustomValidity('Harap masukkan username!')" oninput="setCustomValidity('')">
+                <p>* Username : revanzayuzar</p>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Masukkan Password" required
+                oninvalid="this.setCustomValidity('Harap masukkan password!')" oninput="setCustomValidity('')">
+                <p>* Password : revan123aja</p>
+
+                <div class="button">
+                    <button type="submit" id="submit">Login</button>
+                    <button type="reset" id="reset">Clear</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notif Password Salah -->
+    <div class="password-salah">
+        <div class="notif">
+            <p>Username/Password Salah!</p>
+            <h6 id="close-password-salah">Close</h6>
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
+        <span></span>
         <p>Created by M. Revanza Yuzar</p>
     </footer>
 
     <!-- Script JavaScript -->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/login.js"></script>
     <script src="https://kit.fontawesome.com/d67c175362.js" crossorigin="anonymous"></script>
 </body>
 
