@@ -72,9 +72,7 @@ header i:hover {
     bottom: 0;
     z-index: 999;
     background-color: rgb(200, 200, 200);
-    border-left: 3px solid rgb(180, 180, 180);
     border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
     overflow-y: auto;
     transform: translateX(100%);
     transition: all 0.15s ease-out;
@@ -111,7 +109,7 @@ header i:hover {
 
 .navbar .navbar-profile h1 {
     color: rgb(75, 75, 75);
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -121,6 +119,7 @@ header i:hover {
     background-color: rgb(200, 200, 200);
     font-size: 22px;
     padding: 5px 7px;
+    margin-right: 10px;
     border-radius: 5px;
 }
 
@@ -158,8 +157,7 @@ header i:hover {
 }
 
 .navbar .navbar-content a#logout {
-    margin-top: 40px;
-    margin-left: 25px;
+    margin-left: 26px;
 }
 
 .navbar .navbar-content a i {
@@ -218,22 +216,18 @@ footer {
     padding: 10px 0;
 }
 
-@keyframes kedip-rgb {
+@keyframes color-01 {
 
     0% {
-        background-color: rgb(255, 0, 0);
+        background-color: rgb(255, 50, 50);
     }
 
-    33.3% {
-        background-color: rgb(0, 255, 0);
-    }
-
-    66.6% {
-        background-color: rgb(0, 0, 255);
+    50% {
+        background-color: rgb(50, 50, 255);
     }
 
     100% {
-        background-color: rgb(255, 0, 0);
+        background-color: rgb(255, 50, 50);
     }
 
 }
@@ -244,7 +238,7 @@ footer span {
     background-color: rgb(100, 100, 100);
     margin-right: 10px;
     border-radius: 50%;
-    animation: kedip-rgb 3s infinite;
+    animation: color-01 1s infinite;
     animation-timing-function: ease-in-out;
 }
 
@@ -267,11 +261,11 @@ footer p {
     width: 500px;
     height: auto;
     background-color: rgb(200, 200, 200);
-    box-shadow: 0 0 15px rgb(0, 0, 0);
-    padding: 50px;
-    margin-top: 125px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+    padding: 75px 50px;
+    margin-top: 100px;
     margin-bottom: 100px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .login-center h1 {
@@ -295,17 +289,17 @@ footer p {
     width: 100%;
     background-color: rgb(250, 250, 250);
     padding: 10px;
-    border: 1px solid transparent;
+    border: 1px solid rgb(150, 150, 150);
     border-radius: 5px;
     outline: none;
 }
 
 .login-center input:focus {
-    border-color: rgb(100, 100, 100);
+    border-color: rgb(75, 75, 75);
 }
 
 .login-center p {
-    color: rgb(100, 100, 100);
+    color: rgb(75, 75, 75);
     font-size: 12px;
     font-weight: 400;
     margin-top: 5px;
@@ -332,19 +326,21 @@ footer p {
 }
 
 .login-center button#submit {
-    background-color: rgb(0, 0, 255);
+    background-color: rgb(50, 50, 255);
 }
 
 .login-center button#submit:hover {
-    background-color: rgb(33, 33, 255);
+    background-color: rgb(75, 75, 255);
+    transition: all 0.15s ease-out;
 }
 
 .login-center button#reset {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 50, 50);
 }
 
 .login-center button#reset:hover {
-    background-color: rgb(255, 33, 33);
+    background-color: rgb(255, 75, 75);
+    transition: all 0.15s ease-out;
 }
 
 .password-salah {
@@ -359,7 +355,7 @@ footer p {
     right: 0;
     bottom: 0;
     z-index: 997;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transform: scale(0);
     transition: opacity 0.25s ease-out;
@@ -373,7 +369,7 @@ footer p {
 
 .password-salah .notif {
     background-color: rgb(250, 250, 250);
-    padding: 50px 25px;
+    padding: 25px;
     border-radius: 10px;
 }
 
@@ -381,12 +377,13 @@ footer p {
     color: rgb(50, 50, 50);
     font-size: 15px;
     font-weight: 500;
+    text-align: center;
 }
 
 .password-salah h6 {
     width: 100px;
     color: rgb(222, 222, 222);
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 50, 50);
     font-size: 12px;
     font-weight: 600;
     text-align: center;
@@ -398,7 +395,7 @@ footer p {
 }
 
 .password-salah h6:hover {
-    background-color: rgb(255, 33, 33);
+    background-color: rgb(255, 75, 75);
 }
 
 /* Login Responsive (Media Query) */
@@ -414,7 +411,6 @@ footer p {
 
     .login-center {
         width: 90%;
-        padding: 25px;
     }
 
 }
@@ -422,7 +418,7 @@ footer p {
 @media (max-width: 375px) {
 
     .login-center {
-        padding: 25px 15px;
+        padding: 75px 25px;
     }
 
 }
