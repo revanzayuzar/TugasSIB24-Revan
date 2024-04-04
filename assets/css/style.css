@@ -589,3 +589,87 @@ footer p {
     font-weight: 600;
     margin-top: 25px;
 }
+
+/* Product API & Product Responsive */
+.product-api {
+    margin: 100px 75px;
+}
+
+.product-api .card {
+    width: 100%;
+    display: flex;
+    background-color: rgb(200, 200, 200);
+    padding: 15px;
+    margin-bottom: 50px;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 10px;
+}
+
+.product-api .overflow-hidden img {
+    display: block;
+    border-radius: 10px;
+}
+
+.product-api .card-body {
+    padding-left: 15px;
+}
+
+.product-api .card-body h1 {
+    color: rgb(50, 50, 50);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+.product-api .card-body h2,
+.product-api .card-body h3,
+.product-api .card-body h4,
+.product-api .card-body h5,
+.product-api .card-body h6 {
+    color: rgb(50, 50, 50);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.product-api .card-body p {
+    color: rgb(75, 75, 75);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+
+    .product-api {
+        margin: 100px 25px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .product-api .card {
+        flex-direction: column;
+    }
+
+    .product-api .overflow-hidden {
+        padding-bottom: 15px;
+    }
+
+    .product-api .overflow-hidden img {
+        margin: auto;
+    }
+
+    .product-api .card-body {
+        padding-left: 0;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    .product-api {
+        margin: 100px 15px;
+    }
+
+}
